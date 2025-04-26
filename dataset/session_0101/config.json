@@ -1,0 +1,32 @@
+{
+    "audio_config": {
+        "sampling_rate": 96000,
+        "n_channels": 2,
+        "channels_of_interest": [
+            0,
+            1
+        ],
+        "signal": "FMCW",
+        "tx_file": [
+            "WAVfmcw20000_b9000_l600.wav",
+            "WAVfmcw31000_b9000_l600.wav"
+        ],
+        "frame_length": 600,
+        "sample_depth": 16,
+        "bandpass_range": [
+            [
+                20000,
+                29000
+            ],
+            [
+                31000,
+                40000
+            ]
+        ]
+    },
+    "syncing": {
+        "audio": 2721000,
+        "ground_truth": 1745176756.057358
+    },
+    "response_offset": 0.2
+}
