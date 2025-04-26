@@ -40,3 +40,11 @@ model_results/
 
 # Logs
 *.log 
+
+# Large files
+audio000.raw
+audio000_fmcw_16bit_diff_profiles.png
+record_20250420_151910_752866_audio000_fmcw_16bit_diff_profiles.mp4
+*.mp4
+*.raw
+*.png 
