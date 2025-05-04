@@ -4,6 +4,46 @@ This project implements various machine learning and deep learning models for sm
 
 User data are excluded in this Github commit. 
 
+## Data Processing
+
+The data processing pipeline (`process_data.py`) includes the following steps:
+
+1. **Data Loading**:
+   - Loads FMCW radar profiles from .npy files
+   - Reads action labels from .txt files
+   - Organizes data by user sessions
+
+2. **Time Alignment**:
+   - Extracts action timestamps from audio files
+   - Aligns radar data with action labels
+   - Creates synchronized data segments
+
+3. **Feature Extraction**:
+   - Implements sliding window approach (window size: 15 frames, stride: 7 frames)
+   - Extracts features from each window:
+     - Statistical features (mean, std, min, max)
+     - Frequency domain features
+     - Time domain features
+   - Generates feature vectors for each action segment
+
+4. **Dataset Splitting**:
+   - Splits data by user groups to prevent data leakage
+   - Last user in each group assigned to test set
+   - Remaining users assigned to training set
+   - Maintains balanced class distribution
+
+5. **Data Augmentation**:
+   - Applies random noise
+   - Time warping
+   - Amplitude scaling
+   - Generates synthetic samples for minority classes
+
+6. **Output**:
+   - Saves processed features and labels as .npy files
+   - Generates data statistics and visualizations
+   - Creates train/test split indices
+
+     
 ## Models Implemented
 
 1. Traditional Machine Learning Models:
