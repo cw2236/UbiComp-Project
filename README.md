@@ -4,7 +4,7 @@ This project implements various machine learning and deep learning models for sm
 
 User data are excluded in this Github commit. 
 
-## Data Processing 1 (implemented)
+## Data Processing 1 (self-implemented)
 
 The data processing pipeline (`process_data.py`) includes the following steps:
 
