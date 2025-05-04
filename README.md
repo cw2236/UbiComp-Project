@@ -1,4 +1,4 @@
-# Radar Action Recognition
+# Smart Pin - Acoustic Sensing for Smart Home Control
 
 This project implements various machine learning and deep learning models for smart home control using acoustic sensing with a pin on the chest.
 
