@@ -1,6 +1,8 @@
 # Radar Action Recognition
 
-This project implements various machine learning and deep learning models for radar-based action recognition.
+This project implements various machine learning and deep learning models for smart home control using acoustic sensing with a pin on the chest.
+
+User data are excluded in this Github commit. 
 
 ## Models Implemented
 
@@ -28,7 +30,7 @@ This project implements various machine learning and deep learning models for ra
 ├── train_stacking.py       # Stacking ensemble training
 ├── train_lstm.py           # LSTM model training
 ├── train_cnn.py            # CNN model training
-├── train_dl.py             # Deep Neural Network training
+├── train_dl.py             # MLP training
 └── requirements.txt        # Project dependencies
 ```
 
@@ -38,8 +40,8 @@ This project implements various machine learning and deep learning models for ra
 - Hyperparameter tuning using GridSearchCV
 - Model evaluation with confusion matrices and ROC curves
 - Cross-validation for robust model assessment
-- Support for both CPU and GPU training
 
+  
 ## Requirements
 
 - Python 3.8+
@@ -71,7 +73,7 @@ python train_svm.py    # Train SVM
 python train_stacking.py  # Train Stacking Ensemble
 python train_lstm.py   # Train LSTM
 python train_cnn.py    # Train CNN
-python train_dl.py     # Train Deep Neural Network
+python train_dl.py     # Train MLP
 ```
 
 ## Model Evaluation
@@ -81,9 +83,3 @@ Each model training script generates:
 - Classification report
 - ROC curves (where applicable)
 - Model-specific visualizations
-
-Results are saved in respective directories (e.g., `knn_results/`, `rf_results/`, etc.).
-
-## License
-
-MIT License 
