@@ -132,8 +132,9 @@ python process_data.py
 ```
 
 3. Preprocess data:
+```
 Run chunks in data-loading.ipynb after setting config in dataset folder generated in the data collection and data preparation process
-
+```
 5. Train models:
 ```bash
 python train_knn.py    # Train KNN model
