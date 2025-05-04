@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -20,10 +21,27 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-ENV/
-env/
+# Data files
+processed_data/
+*.npy
+*.pkl
+*.h5
+*.csv
+*.json
+
+# Model files
+*.pth
+*.h5
+*.model
+*.joblib
+
+# Results and plots
+*_results/
+model_evaluation/
+*.png
+*.jpg
+*.jpeg
+*.pdf
 
 # IDE
 .idea/
@@ -31,12 +49,13 @@ env/
 *.swp
 *.swo
 
-# Data files
-*.npy
-*.npz
-*.txt
-processed_data/
-model_results/
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual Environment
+venv/
+ENV/
 
 # Logs
 *.log 
