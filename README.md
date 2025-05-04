@@ -89,7 +89,8 @@ The data processing pipeline (`data-loading.ipynb`) includes the following steps
 
 ```
 .
-├── process_data.py          # Data preprocessing script
+├── process_data.py         # Data preprocessing 1 script
+├── data-loading.ipynb      # Data preprocessing 2 notebook 
 ├── train_knn.py            # KNN model training
 ├── train_lr.py             # Logistic Regression training
 ├── train_rf.py             # Random Forest training
@@ -106,7 +107,6 @@ The data processing pipeline (`data-loading.ipynb`) includes the following steps
 - Data preprocessing and feature extraction
 - Hyperparameter tuning using GridSearchCV
 - Model evaluation with confusion matrices and ROC curves
-- Cross-validation for robust model assessment
 
   
 ## Requirements
