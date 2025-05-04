@@ -4,7 +4,7 @@ This project implements various machine learning and deep learning models for sm
 
 User data are excluded in this Github commit. 
 
-## Data Processing
+## Data Processing 1 (implemented)
 
 The data processing pipeline (`process_data.py`) includes the following steps:
 
@@ -42,6 +42,33 @@ The data processing pipeline (`process_data.py`) includes the following steps:
    - Saves processed features and labels as .npy files
    - Generates data statistics and visualizations
    - Creates train/test split indices
+
+## Data Processing 2 (provided by our mentor)
+
+The data processing pipeline (`data-loading.ipynb`) includes the following steps:
+
+1. **Data Loading**:
+   - Loads pre-processed feature and label arrays from `.npy` files:
+     - `features.npy`: 3D array containing feature vectors per sample
+     - `labels.npy`: 1D array of corresponding class labels
+
+2. **Label Distribution Visualization**:
+   - Plots the distribution of action labels using `matplotlib`
+   - Highlights potential class imbalance
+   - Saves the resulting figure as an image for reference
+
+3. **Dimensionality Inspection**:
+   - Prints shapes of the feature and label arrays
+   - Ensures compatibility with model input requirements
+
+4. **Sample Verification**:
+   - Displays a sample feature array and its associated label
+   - Allows manual inspection of data correctness
+
+5. **Output**:
+   - Generates and saves a class distribution plot
+   - Verifies the structure of the loaded data
+   - Prepares the dataset for training and evaluation
 
      
 ## Models Implemented
